@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SearchBarComponent {
 
+  term = '';
+
+  onInput(value: string){
+    this.term = value;
+    console.log(this.term);
+  }
 }
