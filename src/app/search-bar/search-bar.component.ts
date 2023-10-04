@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-search-bar',
@@ -6,11 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./search-bar.component.css']
 })
 export class SearchBarComponent {
+  @Output() submitted = new EventEmitter<string>();
+  //EventEmitter is a class in Angular used for emitting customer events from
+  //child compones to their parents. It is used in conjuction with out.
 
   term = '';
 
   onFormSubmit(event: any){
     event.preventDefault();
-    console.log(this.term);
+    this.submitted.emit(this.term);
   }
 }
