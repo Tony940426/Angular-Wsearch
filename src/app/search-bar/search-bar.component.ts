@@ -9,8 +9,8 @@ export class SearchBarComponent {
 
   term = '';
 
-  onInput(value: string){
-    this.term = value;
+  onFormSubmit(event: any){
+    event.preventDefault();
     console.log(this.term);
   }
 }
