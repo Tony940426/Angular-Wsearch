@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
+import {HttpClient } from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
 })
 export class WikipediaService {
+  constructor(private http: HttpClient){} 
+  
   search(term: string){
-    return 'This is the wiki search results'
+    return this.http.get();
   }
-
-  constructor() { }
+sdsd
 }
 
 //Services goal is to fetch/store/update any king of data in our app
