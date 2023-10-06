@@ -7,6 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class SearchBarComponent {
   @Output() submitted = new EventEmitter<string>();
+  //<Generic Annotation. It just means we will eventually 'emit' a string>
   //EventEmitter is a class in Angular used for emitting customer events from
   //child compones to their parents. It is used in conjuction with out.
 
