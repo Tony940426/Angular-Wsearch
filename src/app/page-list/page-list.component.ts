@@ -5,6 +5,7 @@ import { Component, Input } from '@angular/core';
   templateUrl: './page-list.component.html',
   styleUrls: ['./page-list.component.css']
 })
+
 export class PageListComponent {
   @Input() pages = [];
 }
