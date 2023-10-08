@@ -1,6 +1,7 @@
-https://en.wikipedia.org/w/api.php?
-    action=query&
-    format=json&
-    list=search&
-    utf8=1&
-    srsearch=space
+rxjs
+
+Function reactive programming library
+-Seperate library from Angular
+-Use extensively by Angular for managing data
+-We use this instead of promises or async/await for handing async stuff
+-We can use async/await if we wanted to
