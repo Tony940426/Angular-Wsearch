@@ -1,7 +1,13 @@
-rxjs
+rxjs:
 
 Function reactive programming library
 -Seperate library from Angular
 -Use extensively by Angular for managing data
 -We use this instead of promises or async/await for handing async stuff
 -We can use async/await if we wanted to
+
+FLOW:
+Observable --event object--> Processing Pipeline --goes through operators
+
+
+Operators are functions that do some specific processing on the incoming value.
