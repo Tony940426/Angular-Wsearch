@@ -26,3 +26,8 @@ export class WikipediaService {
 //Almost always where we are going to put network request
 //Angular will automatically create a single instance of service class
 //We will not be writing new Services....
+
+//***ABOUT SECURITY***
+//We only want to show HTML in our app that we have created.
+//The reason for that is to protect the app from cross-site scripting attacks (XSS)
+//Angular will help escape HTML
